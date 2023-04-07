@@ -3,7 +3,7 @@ import './App.scss';
 import Home from './Components/Home';
 import Login from './Components/Login';
 import OtpVerify from './Components/OtpVerify';
-import {BrowserRouter as Router,Routes,Route} from 'react-router-dom'
+import {HashRouter as Router,Routes,Route} from 'react-router-dom'
 import { Navigate } from 'react-router-dom';
 import { ContextProvider } from './Context/context';
 
