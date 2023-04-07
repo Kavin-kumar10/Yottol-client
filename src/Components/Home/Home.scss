@@ -1,0 +1,14 @@
+.Home{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    p{
+        color: green;
+        font-size: 20px;
+    }
+}
+.Home>*{
+    padding: 12px;
+    margin: 12px;
+}

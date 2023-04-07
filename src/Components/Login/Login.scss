@@ -1,0 +1,61 @@
+.Login{
+    .Contain{
+      display: flex;
+    align-items: center;
+    flex-direction: column;
+    height:500px;
+    aspect-ratio: 11/12;
+    box-shadow: 0px 0px 1px black;
+    padding: 50px 0px 50px 0px;
+    form{
+        padding:0px 50px 0px 50px;
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      font-size: 12px;
+      margin: 30px;
+      input{
+        border: 0.5px solid rgba(225, 225, 225, 0.8);
+        outline: none;
+        padding: 10px;
+      }
+      .btn{
+        display: flex;
+        align-items: center;
+        justify-content:space-around;
+        height: 40px;
+        border-radius: 5px;
+        width: 200px;
+        background-color:white;
+        border: none;
+        box-shadow: 0px 0px 1px black;
+        margin-top: 30px;
+        cursor: pointer;
+        transition: all 0.2s linear;
+        &:hover{
+          box-shadow: 0px 0px 3px black;
+        }
+        p{
+          font-size: 15px;
+          
+        }
+      }
+    }
+    form>*{
+      margin:6px;
+    }
+    .footer{
+        display: flex;
+        justify-self: flex-end;
+        margin-top: auto;
+        p{
+            font-size: 12px;
+            opacity: 0.7;
+            span{
+                font-weight: 900;
+                opacity: 1;
+            }
+        }
+    }
+  }
+}
