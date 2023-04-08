@@ -9,7 +9,6 @@ import PageNotFound from './Components/PageNotFound';
 import { ContextProvider } from './Context/context';
 
 function App() {
-  const [otp,setOtp] = useState();
   const [isLogged,setisLogged] = useState(false);
   return (
     <Router>
@@ -21,8 +20,6 @@ function App() {
         <Route exact path='/Home' element={<Home isLogged={isLogged}/>}/>
         <Route exact path='/Login/otpVerify' element={<OtpVerify setisLogged={setisLogged}/>}/>
         <Route exact path='/*' element={<PageNotFound/>}/>
-
-
       </Routes>
       </ContextProvider>
       </div>

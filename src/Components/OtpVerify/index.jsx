@@ -5,13 +5,19 @@ import { MyContext } from "../../Context/context";
 import { useNavigate } from "react-router-dom";
 
 const OtpVerify = ({setisLogged}) =>{
+  //Navigation
   const Navigate = useNavigate();
+
+  //States
   const [otp,setOtp] = useContext(MyContext);
   const [inputOtp,setInputOtp] = useState('');
   const [Match,setMatch] = useState(true);
+
   setTimeout(()=>{
     setOtp(localStorage.getItem('otp'))
   },1000)
+
+
   const submitHandler = (e) =>{
       e.preventDefault();
       if(inputOtp == otp){
@@ -26,6 +32,7 @@ const OtpVerify = ({setisLogged}) =>{
       }
       setInputOtp('');
   }
+
     return(
         <div className="OtpVerify">
         <div className="Contain">
