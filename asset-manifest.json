@@ -1,14 +1,14 @@
 {
   "files": {
     "main.css": "/Yottol-client/static/css/main.58335770.css",
-    "main.js": "/Yottol-client/static/js/main.c45c6dac.js",
+    "main.js": "/Yottol-client/static/js/main.1f5a393d.js",
     "static/media/404.svg": "/Yottol-client/static/media/404.32f6b27c4f6b205fbfcceaf6201ea170.svg",
     "index.html": "/Yottol-client/index.html",
     "main.58335770.css.map": "/Yottol-client/static/css/main.58335770.css.map",
-    "main.c45c6dac.js.map": "/Yottol-client/static/js/main.c45c6dac.js.map"
+    "main.1f5a393d.js.map": "/Yottol-client/static/js/main.1f5a393d.js.map"
   },
   "entrypoints": [
     "static/css/main.58335770.css",
-    "static/js/main.c45c6dac.js"
+    "static/js/main.1f5a393d.js"
   ]
 }
