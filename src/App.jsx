@@ -5,6 +5,7 @@ import Login from './Components/Login';
 import OtpVerify from './Components/OtpVerify';
 import {HashRouter as Router,Routes,Route} from 'react-router-dom'
 import { Navigate } from 'react-router-dom';
+import PageNotFound from './Components/PageNotFound';
 import { ContextProvider } from './Context/context';
 
 function App() {
@@ -15,10 +16,12 @@ function App() {
       <div className="App">
       <ContextProvider>
       <Routes>
-        <Route path='/' element={(isLogged)?<Navigate to='/Home'/>:<Navigate to='/Login'/>}/>
-        <Route path='/Login' element={<Login/>} />
-        <Route path='/Home' element={<Home isLogged={isLogged}/>}/>
-        <Route path='/Login/otpVerify' element={<OtpVerify setisLogged={setisLogged}/>}/>
+        <Route exact path='/' element={(isLogged)?<Navigate to='/Home'/>:<Navigate to='/Login'/>}/>
+        <Route exact path='/Login' element={<Login/>} />
+        <Route exact path='/Home' element={<Home isLogged={isLogged}/>}/>
+        <Route exact path='/Login/otpVerify' element={<OtpVerify setisLogged={setisLogged}/>}/>
+        <Route exact path='/*' element={<PageNotFound/>}/>
+
 
       </Routes>
       </ContextProvider>
