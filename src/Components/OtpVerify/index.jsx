@@ -34,6 +34,7 @@ const OtpVerify = ({setisLogged}) =>{
         <form onSubmit={submitHandler}>
           <label htmlFor="Email">Verfiy Your OTP</label>
             <input type="number" placeholder='OTP' id='OTP' name="OTP" value={inputOtp} required onChange={(e)=>{setInputOtp(e.target.value)}}/>
+            <p style={{color:'grey'}}>Disclaimer: check in spam too</p>
             {(!Match)?<p style={{color:'red',fontSize:'12px'}}>Incorrect OTP try again</p>:null}
           <button className="btn" type="submit">
             <CgPassword size={25} color="green"/>
