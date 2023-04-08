@@ -30,7 +30,7 @@ const Login = () =>{
           <div className="Contain">
             <h2><i>Swift</i>folios</h2>
             <p>Login</p>
-            <form action="http://localhost:5000" method="POST" onSubmit={submitHandler}>
+            <form action="https://yottol-server.onrender.com" method="POST" onSubmit={submitHandler}>
               <label htmlFor="Email">Email</label>
                 <input type="email" placeholder='abcxyz.com' id='Email' name="Email" value={mail} onChange={(e)=>{setMail(e.target.value)}} required/>
                 <input type="hidden" name="Otp" value={otp} />
